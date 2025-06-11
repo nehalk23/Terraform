@@ -1,0 +1,45 @@
+What is Terraform?
+Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp that allows you to define, provision, and manage cloud infrastructure using simple, declarative configuration files.
+Key Concepts of Terraform:
+Term	Meaning
+Infrastructure as Code (IaC)	Manage cloud resources using code (instead of manual UI work).
+Declarative Syntax	You describe what you want, and Terraform figures out how to achieve it.
+Provider	Plugin for managing resources in a specific platform like GCP, AWS, Azure, etc.
+Resource	A piece of infrastructure (e.g., VM, bucket, database) that you define in code.
+State File (terraform.tfstate)	Terraform tracks the infrastructure it manages using this file.
+Modules	Reusable blocks of code to create infrastructure components.
+
+📦 What Can You Do with Terraform?
+You can create and manage:
+
+VMs (Compute Engine, EC2, Azure VM)
+
+Networks (VPCs, Subnets, Firewalls)
+
+Databases (Cloud SQL, RDS, CosmosDB)
+
+Buckets (GCS, S3, Azure Blob)
+
+IAM policies, roles, secrets, etc.
+
+🔄 Basic Terraform Workflow
+Write configuration in .tf files (e.g., main.tf)
+
+Initialize the project
+
+bash
+Copy
+Edit
+terraform init
+Preview what will happen
+
+bash
+Copy
+Edit
+terraform plan
+Apply the changes
+
+bash
+Copy
+Edit
+terraform apply
